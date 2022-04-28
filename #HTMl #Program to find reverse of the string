@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Web Page</title>
+</head>
+<body>
+<script>
+    function reverse(s)
+    {return s.split("").reverse().join("")}
+    console.log(reverse("tronshark"))
+</script>
+</body>
+</html>					

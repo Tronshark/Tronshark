@@ -1,0 +1,31 @@
+using System;
+class T{
+	
+public static void Main()
+{
+	string inputstring;
+	int z, len, vowels, consonants;
+	inputstring = "Tronshark";	
+	vowels = 0;
+	consonants = 0;
+	len = inputstring.Length;
+	for(z = 0; z < len; z++)
+	{
+		if (inputstring[z] == 'a' || inputstring[z] == 'A' ||
+			inputstring[z] == 'e' || inputstring[z] == 'E' ||
+			inputstring[z] == 'i' || inputstring[z] == 'I' ||
+			inputstring[z] == 'o' || inputstring[z] == 'O' ||
+			inputstring[z] == 'u' || inputstring[z] == 'U')
+		{
+			vowels++;
+		}
+		else if ((inputstring[z] >= 'a' && inputstring[z] <= 'z') ||
+				(inputstring[z] >= 'A' && inputstring[z] <= 'Z'))
+		{
+			consonants++;
+		}
+	}
+	Console.WriteLine("Number of vowel = " + vowels);
+	Console.WriteLine("Number of consonant = " + consonants);
+}
+}
